@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Neural Style Transfer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{{url_for('static',filename='assets/css/main.css')}}" />
+	</head>
+	<body class="landing">
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<h1><strong><a href="index.html">AI</a></strong> based Image Styling</h1>
+			</header>
+
+
+		<!-- Banner -->
+			<section id="banner">
+				<h2>Neural Style Transfer</h2>
+
+				<ul class="actions">
+					<li><a href="#two" class="button special big">{{text}}</a></li>
+				</ul>
+			</section>
+
+			<!-- One -->
+				<section id="one" class="wrapper style1">
+					<div class="container 75%">
+						<div class="row 200%">
+							<div class="6u 12u$(medium)">
+								<header class="major">
+									<h2>Neural Style Transfer</h2>
+									<p>Know about it.</p>
+								</header>
+							</div>
+							<div class="6u$ 12u$(medium)">
+								<p>Neural Style Transfer refers to a class of software algorithms that manipulate digital images, or videos, to adopt the appearance or visual style of another image. NST algorithms are characterized by their use of deep neural networks in order to perform the image transformation.</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="image fit captioned">
+					<img id="content" src="{{url_for('static',filename='images/example.jpeg')}}" alt="Example Image" />
+					<h3 align="center">Example</h3>
+				</div>
+			<!-- Two -->
+				<section id="two" class="wrapper style2 special">
+					<div class="container">
+						<header class="major">
+							<h2>Try It Out</h2>
+							<p>Select your content Image and custom Style Image</p>
+						</header>
+						<form action="{{url_for('mix')}}" method="post" enctype="multipart/form-data">
+							<div class="row 150%">
+							<div class="6u 12u$(xsmall)">
+								<div class="image fit captioned">
+									<span>Content Image</span>
+									<img id="content" src="{{content}}" alt="Content Image" />
+									<input type="file" name="contentbtn" accept=".jpg,.jpeg,.png" onchange="readURL(this,'content'); ">
+								</div>
+							</div>
+							<div class="6u$ 12u$(xsmall)">
+								<div class="image fit captioned">
+									<span>Style Image</span>
+									<img id="style" src="{{style}}" alt="Style image" />
+									<input type="file" name="stylebtn" accept="Image/*" onchange="readURL(this,'style'); validate(); ">
+								</div>
+							</div>
+						</div>
+							<button id="btn"  type="submit" class="button special big" onclick="loading();" disabled>Submit</button>
+					</form>
+						<div id="loading" style="display: none;">
+							<h4>Computing Please wait...</h4>
+							<img src="{{url_for('static',filename='images/loading.gif')}}">
+						</div>
+						<div class="6u$ 12u$(xsmall)" style={{attrib}}>
+							<div class="image fit captioned">
+								<img src="{{result}}" alt="Style image" />
+								<h4>Styled Image</h2>
+							</div>
+						</div>
+						
+					</div>
+				</section>
+
+			<!-- Three -->
+				
+
+			<!-- Four -->
+				
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-linkedin"></a></li>
+						<li><a href="#" class="icon fa-twitter"></a></li>
+						<li><a href="#" class="icon fa-instagram"></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Devil 2020. Ain't No Rights Reserved.</li>
+						
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="{{url_for('static',filename='assets/js/jquery.min.js')}}"></script>
+			<script src="{{url_for('static',filename='assets/js/skel.min.js')}}"></script>
+			<script src="{{url_for('static',filename='assets/js/util.js')}}"></script>
+			<script src="{{url_for('static',filename='assets/js/main.js')}}"></script>
+			<script src="{{url_for('static',filename='assets/js/image.js')}}"></script>
+	</body>
+</html>
