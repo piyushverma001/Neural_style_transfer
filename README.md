@@ -2,7 +2,7 @@
 
 Neural Style Transfer refers to a class of software algorithms that manipulate digital images, or videos, to adopt the appearance or visual style of another image. NST algorithms are characterized by their use of deep neural networks in order to perform the image transformation.
 
-## Implementation of the followin paper
+## Implementation of the following paper
 https://zpascal.net/cvpr2016/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf
 
 
