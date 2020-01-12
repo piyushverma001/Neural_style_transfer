@@ -4,7 +4,10 @@ Neural Style Transfer refers to a class of software algorithms that manipulate d
 
 ## How does it work?
 ![Example](https://hackernoon.com/hn-images/1*k5Q_NYr1niC-qjWMr-lUCg.png)
-
+The generated image is having the content of the Content image and style of the style image. It can be seen that the above result cannot be obtained simply by overlapping the images. So how does it work?
+What Convolutional Neural Network Captures ?
+Look at this image
+![CNN](https://hackernoon.com/hn-images/1*KYFgdw7txL_UhnOxpEn97Q.jpeg)
 
 ### Installing
 
