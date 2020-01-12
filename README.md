@@ -2,12 +2,9 @@
 
 Neural Style Transfer refers to a class of software algorithms that manipulate digital images, or videos, to adopt the appearance or visual style of another image. NST algorithms are characterized by their use of deep neural networks in order to perform the image transformation.
 
-## How does it work?
-![Example](https://hackernoon.com/hn-images/1*k5Q_NYr1niC-qjWMr-lUCg.png)
-The generated image is having the content of the Content image and style of the style image. It can be seen that the above result cannot be obtained simply by overlapping the images. So how does it work?
-What Convolutional Neural Network Captures ?
-Look at this image
-![CNN](https://hackernoon.com/hn-images/1*KYFgdw7txL_UhnOxpEn97Q.jpeg)
+## Implementation of the followin paper
+https://zpascal.net/cvpr2016/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf
+
 
 ### Installing
 
