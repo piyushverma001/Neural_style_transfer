@@ -11,7 +11,7 @@ mpmath==1.1.0
 numpy==1.17.2
 openai==0.1
 opencv-contrib-python==4.1.2.30
-opencv-python==4.1.2.30
+opencv-python==4.2.0.32
 Pillow==6.2.0
 protobuf==3.10.0
 tensorboard==2.0.0
